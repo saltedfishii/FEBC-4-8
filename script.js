@@ -20,5 +20,6 @@ async function getData(){
         result.innerHTML += `<li>${json[i].id}</li>`;
     }
 }
+console.log('feature branch')
 getData()
-console.log("this id form git")
+
