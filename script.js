@@ -11,13 +11,13 @@ function addTodo(){
     result.innerHTML += `<li>${valueTodo}</li>`;
 }
 
-// async function getData(){
-//     const response = await fetch('https://jsonplaceholder.typicode.com/todos')
-//     const json = await response.json()
+async function getData(){
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos')
+    const json = await response.json()
 
-//     for (let i = 0; i < json.length; i++) {
-//         const result = document.getElementById("result");
-//         result.innerHTML += `<li>${json[i].id}</li>`;
-//     }
-// }
-// getData()
+    for (let i = 0; i < json.length; i++) {
+        const result = document.getElementById("result");
+        result.innerHTML += `<li>${json[i].id}</li>`;
+    }
+}
+getData()
